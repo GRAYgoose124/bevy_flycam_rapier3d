@@ -1,10 +1,7 @@
-# bevy_flycam
-[![Crates.io](https://img.shields.io/crates/v/bevy_flycam)](https://crates.io/crates/bevy_flycam)
-![Crates.io](https://img.shields.io/crates/l/bevy_flycam)
-![docs.rs](https://img.shields.io/docsrs/bevy_flycam)
+# bevy_rapier_cam (Based on bevy_flycam)
+See the original here: [sburris0's github](https://github.com/sburris0/bevy_flycam). Provided with no warranty under the ISC license.
 
-
-A basic first-person fly camera for Bevy 0.8
+A basic first-person camera for Bevy 0.8.1 providing physics through [Rapier3D](https://rapier.rs/).
 
 ## Controls
 * WASD to move horizontally
@@ -13,28 +10,14 @@ A basic first-person fly camera for Bevy 0.8
 * ESC to grab/release cursor.
 
 ## Comparison
-There are a few notable differences from [bevy_fly_camera](https://github.com/mcpar-land/bevy_fly_camera)...
+This is not a simple fly camera like it's foundation, it is a physically based first person camera.
 
-* No linear interpolation
-* Cursor grabbing
-* Shorter code
-* Single-line setup
-* A tiny bit faster?
-
-## Usage
+## Usage `!! HEAVY CONSTRUCTION !!` 
 1. Add to `Cargo.toml` or copy `lib.rs` to your own file
 ```toml
 [dependencies]
-bevy = "0.8"
-bevy_flycam = "*"
-```
-
-or
-
-```toml
-[dependencies]
-bevy = "0.8"
-bevy_flycam = { git = "https://github.com/sburris0/bevy_flycam" }
+bevy = "0.8.1"
+bevy_rapier_cam = { git = "https://github.com/GRAYgoose124/bevy_flycam_rapier3d.git"}
 ```
 
 2. Include the `PlayerPlugin`
@@ -74,13 +57,3 @@ fn main() {
 }
 ```
 
-# Support
-[![Bevy tracking](https://img.shields.io/badge/Bevy%20tracking-released%20version-lightblue)](https://github.com/bevyengine/bevy/blob/main/docs/plugins_guidelines.md#main-branch-tracking)
-
-bevy_flycam's crate version follows bevy's X version as shown:
-|bevy|bevy_flycam|
-|---|---|
-|0.X.Y|0.X|
-
-## Contributing
-PRs are very welcome.

@@ -1,20 +1,20 @@
 [package]
-name = "bevy_flycam"
+name = "bevy_rapier_cam"
 version = "0.8.1"
-authors = ["Spencer Burris <sburris@posteo.net>"]
+authors = ["Spencer Burris <sburris@posteo.net>", "Grayson Miller <grayson.miller124@gmail.com>"]
 edition = "2021"
 license = "ISC"
 description = "Basic first-person fly camera for the Bevy game engine"
-homepage = "https://github.com/sburris0/bevy_flycam/"
-repository = "https://github.com/sburris0/bevy_flycam/"
+homepage = "https://github.com/GRAYgoose124/bevy_flycam_rapier3d.git"
+repository = "https://github.com/GRAYgoose124/bevy_flycam_rapier3d.git"
 readme = "README.md"
-keywords = ["gamedev", "bevy", "3d", "camera"]
+keywords = ["gamedev", "bevy", "rapier3d", "3d", "camera"]
 categories = ["game-engines", "game-development"]
 resolver = "2"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
-bevy = {version = "0.8", default-features = false, features = ["bevy_render", "bevy_core_pipeline", "bevy_asset"]}
+bevy = {version = "0.8.1", default-features = false, features = ["bevy_render", "bevy_core_pipeline", "bevy_asset"]}
 
 [dev-dependencies]
-bevy = {version = "0.8", default-features = false, features = ["x11", "wayland", "bevy_pbr", "bevy_core_pipeline", "bevy_asset"]}
+bevy = {version = "0.8.1", default-features = false, features = ["x11", "wayland", "bevy_pbr", "bevy_core_pipeline", "bevy_asset"]}
